@@ -1,0 +1,5 @@
+Credentials cache: API:9244F9A5-6F52-4DB5-A8CD-82861527A1DC
+        Principal: ysaghir@42.FR
+
+  Issued                Expires               Principal
+Aug 29 11:04:04 2018  Sep  5 11:03:56 2018  krbtgt/42.FR@42.FR
