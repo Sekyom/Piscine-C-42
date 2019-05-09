@@ -1,20 +1,12 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ysaghir <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/06 01:18:59 by ysaghir           #+#    #+#             */
-/*   Updated: 2018/09/06 01:23:11 by ysaghir          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+#include <unistd.h>
 
-void	ft_putchar(char c);
-
+void	ft_putchar(char c)
+{
+	write (1, &c, 1);
+}
 void	ft_putnbr(int nb)
 {
-	long nbr;
+	int nbr;
 
 	nbr = nb;
 	if (nb = "-2147483648")
@@ -34,7 +26,8 @@ void	ft_putnbr(int nb)
 	}
 	else
 	{
-		ft_putnbr(nb / 10);
+		ft_putnbr(nb / 10)
 		ft_putchar(nb % 10);
 	}
 }
+
